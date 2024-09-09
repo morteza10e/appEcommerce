@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.adapter.activity.ProfileActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/emamhossien"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/iran"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:text="مرتضی محمدی" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_number"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/iran"
+                        android:padding="5dp"
+                        tools:text="09944300115"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                tools:text="morteza10e@gmail.com"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/line" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/color_chenge"
+                android:fontFamily="@font/iran"
+                android:padding="20dp"
+                android:text="مشخصات من"
+                android:textAlignment="textStart" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/line" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_chenge"
+                android:fontFamily="@font/iran"
+                android:padding="20dp"
+                android:text="لیست تراکنش"
+                android:textAlignment="textStart" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_chenge"
+                android:fontFamily="@font/iran"
+                android:padding="20dp"
+                android:text="علاقه مندی ها"
+                android:textAlignment="textStart" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_chenge"
+                android:fontFamily="@font/iran"
+                android:padding="20dp"
+                android:text="لیست خرید من"
+                android:textAlignment="textStart" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/line" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_chenge"
+                android:fontFamily="@font/iran"
+                android:padding="20dp"
+                android:text="درباره ما"
+                android:textAlignment="textStart" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_chenge"
+                android:fontFamily="@font/iran"
+                android:padding="20dp"
+                android:text="تنظیمات"
+                android:textAlignment="textStart" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_chenge"
+                android:fontFamily="@font/iran"
+                android:padding="20dp"
+                android:text="خروج"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8E44AD"
+                android:fontFamily="@font/iran"
+                android:padding="5dp"
+                android:text="لیست خرید های قبلی"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+
+
+    <!--
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/profile_image"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_width="86dp"
+                   android:layout_height="86dp"
+                   app:civ_border_color="#FF000000"
+                   app:civ_border_width="2dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   android:src="@drawable/ic_launcher_background" />
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="vertical">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/iran"
+                     android:textAlignment="center"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginRight="10dp"
+                     android:textColor="@color/black"
+                     android:textSize="20sp"
+                     android:textStyle="bold"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     android:text="مرتضی محمدی" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="6dp"
+                     android:fontFamily="@font/iran"
+                     android:layout_marginRight="12dp"
+                     android:layout_marginBottom="5dp"
+                     android:padding="5dp"
+                     android:textAlignment="center"
+                     android:textSize="14sp"
+                     android:text="09944300115"/>
+             </LinearLayout>
+           </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

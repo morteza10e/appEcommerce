@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl"
+    android:layout_height="250dp"
+    android:layout_margin="12dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/imagePost"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:padding="20dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:fontFamily="@font/iran"
+            android:id="@+id/tv_title"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imagePost"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/tv_title"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp"
+            android:layout_toEndOf="@+id/imagePost"
+            android:fontFamily="@font/iran"
+            android:textAlignment="center"
+            android:textColor="#2ECC71" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/imagePost"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_mosbat"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:src="@mipmap/signs"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image_mines"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:src="@mipmap/minus"
+                android:contentDescription="@string/todo" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="حذف کردن محصول">
+
+    </Button>
+
+
+</androidx.cardview.widget.CardView>
+

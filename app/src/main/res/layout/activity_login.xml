@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#77966BD3"
+    tools:context=".view.adapter.activity.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/iran"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="ورود به حساب کاربری"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_login">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_mobile"
+            android:background="#DBE6EC"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iran"
+            android:hint="شماره موبایل را وارد کنید..."
+            android:padding="10dp"
+             />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:background="#DBE6EC"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iran"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="رمز عبور خود را وارد کنید..."/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/iran"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="ورود"
+           />
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/iran"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ثبت نام نکرده اید !"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".view.adapter.activity.AddressActivity"
+    android:background="#F4F3F3">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:fontFamily="@font/iran"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:text="انتخاب ادرس"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp"
+        android:layout_margin="10dp"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Tv_id_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="8dp"
+                android:text="نام شهر   : "/>
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Tv_id_order"
+                android:fontFamily="@font/iran"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:lineSpacingExtra="8dp"
+                />
+            <TextView
+                android:id="@+id/Tv_price_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:text="شماره تلفن :"
+                android:padding="10dp"
+                android:layout_below="@+id/Tv_id_order"
+                android:fontFamily="@font/iran" />
+
+            <TextView
+                android:id="@+id/tv_tell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Tv_price_title"
+                android:layout_marginTop="20dp"
+                android:textColor="#2ECC71"
+                android:padding="10dp"
+                android:text="@{data.phone}"
+                android:textAlignment="center"
+                android:layout_below="@+id/Tv_id_order"
+                android:fontFamily="@font/iran" />
+
+
+            <TextView
+                android:id="@+id/Tv_title_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:text="آدرس :"
+                android:padding="10dp"
+                android:layout_below="@+id/Tv_price_title"
+                android:fontFamily="@font/iran" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Tv_price_title"
+                android:layout_marginTop="20dp"
+                android:textColor="#2ECC71"
+                android:padding="10dp"
+                android:text="@{data.address}"
+                android:textAlignment="center"
+                android:layout_below="@+id/tv_tell"
+                android:fontFamily="@font/iran" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/signs"
+        android:contentDescription="@string/todo" />
+
+
+</RelativeLayout>

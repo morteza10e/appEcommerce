@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:padding="25dp"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@id/img_product"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="گوشی سامسونگ گلکسی مدل a10" />
+
+        <TextView
+            android:id="@+id/tv_tell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_product"
+            android:textAlignment="center"
+            android:textColor="#2ECC71"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            tools:text="2000000" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img_product"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            tools:text="1403/05/03" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
